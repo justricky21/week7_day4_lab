@@ -32,7 +32,7 @@ public abstract class Mage extends Player {
     }
 
     public void defendWithDefender(Enemy enemy){
-    enemy.takeDamage(defend.defend());
+        enemy.takeDamage(defend.defend());
     }
 
     public String castSpell(){

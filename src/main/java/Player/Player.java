@@ -16,4 +16,8 @@ public abstract class Player {
     public String getName() {
         return name;
     }
+
+    public void setHitPoints(int hitPoints) {
+        this.hitPoints = hitPoints;
+    }
 }

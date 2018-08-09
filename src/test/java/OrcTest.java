@@ -18,6 +18,10 @@ public class OrcTest {
     }
 
     @Test
+    public void hasReadableName(){
+        assertEquals("Orc", orc.getReadableName());
+    }
+    @Test
     public void orcCanBeHurt(){
         orc.takeDamage(5);
         assertEquals(10, orc.getHitPoints());
