@@ -17,4 +17,8 @@ public abstract class Fighter extends Player {
     public void setWeapon(IWeapon weapon) {
         this.weapon = weapon;
     }
+
+    public String attackWithWeapon(){
+        return this.weapon.attack();
+    }
 }

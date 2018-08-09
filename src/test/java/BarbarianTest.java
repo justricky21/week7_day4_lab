@@ -31,9 +31,10 @@ public class BarbarianTest {
         barbarian1.setWeapon(axe1);
         assertEquals(axe1, barbarian1.getWeapon());
     }
-//
-//    @Test
-//    public void canAttack(){
-//
-//    }
+
+    @Test
+    public void canAttack(){
+        barbarian1.setWeapon(axe1);
+        assertEquals("Chop!", barbarian1.attackWithWeapon());
+    }
 }
