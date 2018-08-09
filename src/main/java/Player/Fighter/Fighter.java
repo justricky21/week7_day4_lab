@@ -1,5 +1,6 @@
 package Player.Fighter;
 
+import Enemy.Enemy;
 import Player.Interfaces.IWeapon;
 import Player.Player;
 
@@ -18,7 +19,7 @@ public abstract class Fighter extends Player {
         this.weapon = weapon;
     }
 
-    public int attackWithWeapon(){
-        return this.weapon.attack();
+    public void attackWithWeapon(Enemy enemy){
+        enemy.takeDamage(weapon.attack());
     }
 }
