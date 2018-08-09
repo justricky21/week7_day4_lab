@@ -33,13 +33,15 @@ public class DruidTest {
         assertEquals(wolf1, druid1.getDefend());
     }
 
-//    @Test
-//    public  void canCastSpell(){
-//
-//    }
-//
-//    @Test
-//    public void canDefend(){
-//
-//    }
+    @Test
+    public  void canCastSpell(){
+        druid1.setSpell(fireball1);
+        assertEquals("Boom!!!", druid1.castSpell());
+    }
+
+    @Test
+    public void canDefend(){
+        druid1.setDefend(wolf1);
+        assertEquals(2, druid1.defendWithDefender());
+    }
 }

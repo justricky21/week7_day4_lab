@@ -29,4 +29,12 @@ public abstract class Mage extends Player {
     public void setDefend(IDefend defend) {
         this.defend = defend;
     }
+
+    public int defendWithDefender(){
+        return this.defend.defend();
+    }
+
+    public String castSpell(){
+        return this.spell.cast();
+    }
 }
