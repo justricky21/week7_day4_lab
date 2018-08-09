@@ -17,7 +17,7 @@ public abstract class Player {
         return name;
     }
 
-    public void setHitPoints(int hitPoints) {
-        this.hitPoints = hitPoints;
+    public void healHitPoints(int amountHealed){
+        this.hitPoints += amountHealed;
     }
 }

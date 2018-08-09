@@ -20,7 +20,6 @@ public class Cleric extends Player {
     }
 
     public void useMedicine(Player player){
-        int newHealth = (player.getHitPoints() + medicine.heal());
-        player.setHitPoints(newHealth);
+        player.healHitPoints(medicine.heal());
     }
 }
