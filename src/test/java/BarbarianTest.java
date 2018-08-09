@@ -61,4 +61,5 @@ public class BarbarianTest {
         barbarian1.setWeapon(spear1);
         assertEquals(3, barbarian1.attackWithWeapon());
     }
+
 }
