@@ -1,5 +1,6 @@
 package Player.Mage;
 
+import Enemy.Enemy;
 import Player.Interfaces.IDefend;
 import Player.Interfaces.ISpell;
 import Player.Player;
@@ -30,8 +31,8 @@ public abstract class Mage extends Player {
         this.defend = defend;
     }
 
-    public int defendWithDefender(){
-        return this.defend.defend();
+    public void defendWithDefender(Enemy enemy){
+    enemy.takeDamage(defend.defend());
     }
 
     public String castSpell(){

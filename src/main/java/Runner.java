@@ -11,5 +11,8 @@ public class Runner {
         Orc orc = new Orc();
         barbarian.attackWithWeapon(orc);
         System.out.println("HOLY SHIT, " + barbarian.getName() + " just did "+barbarian.getWeapon().attack()+ " damage to the " + orc.getReadableName() + "! The " + orc.getReadableName() + " now has " + orc.getHitPoints() + " hit points!");
+        System.out.println("HOLY SHIT, " + barbarian.getName() + " just did "+barbarian.getWeapon().attack()+ " damage to the " + orc.getReadableName() + "! The " + orc.getReadableName() + " now has " + orc.getHitPoints() + " hit points!");
     }
+
+
 }
