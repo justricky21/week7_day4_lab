@@ -14,13 +14,6 @@ public class ClericTest {
         healingPotion1 = new HealingPotion();
     }
 
-    /*test if cleric dude:
-    has potion
-    can change potion
-    can use potion
-    can use different potion
-     */
-
     @Test
     public void hasMedicine(){
         cleric1.setMedicine(healingPotion1);
@@ -32,5 +25,5 @@ public class ClericTest {
         cleric1.setMedicine(healingPotion1);
         assertEquals(3, cleric1.useMedicine());
     }
-//placeholder
+
 }
