@@ -18,7 +18,7 @@ public abstract class Fighter extends Player {
         this.weapon = weapon;
     }
 
-    public String attackWithWeapon(){
+    public int attackWithWeapon(){
         return this.weapon.attack();
     }
 }

@@ -2,8 +2,9 @@ package Player.Weapon;
 
 import Player.Interfaces.IWeapon;
 
-public class Axe implements IWeapon {
+public class Spear implements IWeapon {
+
     public int attack(){
-        return 4;
+        return 3;
     }
 }
